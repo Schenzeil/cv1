@@ -1,0 +1,162 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<title>Miscellaneous</title>
+<link rel="shortcut icon" href="Anaheim electronics.png" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  
+<style>
+body,html{
+    margin: 0;
+    padding: 0;
+    background-image: url(matteblack.jpg);
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #fcc23a;
+}
+
+h1{
+    position: absolute;
+    padding:  3px;
+    float:  left;
+    margin-left: 2%;
+    margin-top: 10px;
+    font-family: Open sans;
+    color: #2521ff;
+}
+
+
+ul{
+    width: auto;
+    overflow: hidden;
+    float: right;
+    margin-top: 8px;
+}           
+
+li{
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+
+a{
+    text-align: center;
+    color: #white;
+    text-decoration: none;
+    text-shadow: 1px 0px 0px;
+    font-family: 'Open sans'; sans-serif;
+    font-size: 1.2vw;
+}
+
+a:hover:not(.active) {
+  background-color: #04AA6D;
+  transition: 0.1s;
+}
+
+a:hover(.active) {
+  background-color: white;
+}
+
+
+
+  
+#clear{  
+width: 270px;  
+border: 3px solid gray;  
+    border-radius: 3px;  
+    padding: 20px;  
+    background-color: red;  
+}  
+  
+.formstyle  
+{  
+width: 300px;  
+height: 530px;  
+margin: auto;  
+border: 3px solid skyblue;  
+border-radius: 5px;  
+padding: 20px;  
+}  
+  
+  
+  
+input  
+{  
+width: 20px;  
+background-color: #2521ff;  
+color: white;  
+border: 3px solid gray;  
+    border-radius: 5px;  
+    padding: 26px;  
+    margin: 5px;  
+    font-size: 15px;  
+}  
+  
+  
+#calc{  
+width: 250px;  
+border: 5px solid black;  
+    border-radius: 3px;  
+    padding: 20px;  
+    margin: auto;  
+}  
+  
+</style>
+<header>
+    <h1>ANAHEIM ELECTRONICS</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="sounds.html">Sounds</a></li>
+            <li><a href="misc.html">Miscellaneous</a></li>
+        </ul>
+    </nav>
+</header>  
+  
+</head>  
+<body>  
+
+<div class= "formstyle">  
+<form name = "form1">  
+      
+    
+  <input id = "calc" type ="text" name = "answer"> <br> <br>  
+  
+  <input type = "button" value = "1" onclick = "form1.answer.value += '1' ">  
+  <input type = "button" value = "2" onclick = "form1.answer.value += '2' ">  
+  <input type = "button" value = "3" onclick = "form1.answer.value += '3' ">  
+   <input type = "button" value = "+" onclick = "form1.answer.value += '+' ">  
+  <br> <br>  
+    
+  <input type = "button" value = "4" onclick = "form1.answer.value += '4' ">  
+  <input type = "button" value = "5" onclick = "form1.answer.value += '5' ">  
+  <input type = "button" value = "6" onclick = "form1.answer.value += '6' ">  
+  <input type = "button" value = "-" onclick = "form1.answer.value += '-' ">  
+  <br> <br>  
+    
+  <input type = "button" value = "7" onclick = "form1.answer.value += '7' ">  
+  <input type = "button" value = "8" onclick = "form1.answer.value += '8' ">  
+  <input type = "button" value = "9" onclick = "form1.answer.value += '9' ">  
+  <input type = "button" value = "*" onclick = "form1.answer.value += '*' ">  
+  <br> <br>  
+    
+    
+  <input type = "button" value = "/" onclick = "form1.answer.value += '/' ">  
+  <input type = "button" value = "0" onclick = "form1.answer.value += '0' ">  
+    <input type = "button" value = "." onclick = "form1.answer.value += '.' ">  
+    
+  <input type = "button" value = "=" onclick = "form1.answer.value = eval(form1.answer.value) ">  
+  <br>   
+  
+  <input type = "button" value = "Clear All" onclick = "form1.answer.value = ' ' " id= "clear" >  
+  <br>   
+    
+</form>  
+</div>  
+</body>  
+</html>  
